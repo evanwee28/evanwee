@@ -166,25 +166,6 @@
             margin-right: 0.25rem;
         }
 
-        /* Timeline and Tables */
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 1rem 0;
-        }
-
-        th, td {
-            border: 1px solid var(--border-color);
-            padding: 0.75rem;
-            text-align: left;
-            font-size: 0.9rem;
-        }
-
-        th {
-            background-color: var(--bg-light);
-            color: var(--primary-color);
-        }
-
         .btn {
             display: inline-block;
             background-color: var(--primary-color);
@@ -201,6 +182,14 @@
 
         .btn:hover {
             background-color: #001f35;
+        }
+
+        .pdf-container {
+            width: 100%;
+            height: 600px;
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            margin-top: 1rem;
         }
 
         /* Footer */
@@ -253,6 +242,7 @@
             aside { width: 100%; position: relative; }
             main { margin-left: 0; padding: 1.5rem; }
             .grid-2 { grid-template-columns: 1fr; }
+            .pdf-container { height: 400px; }
         }
     </style>
 </head>
@@ -275,8 +265,8 @@
         </nav>
 
         <div class="sidebar-footer">
-            <p>Contact: <a href="mailto:ehector@yorku.ca" style="color:#fff;">ehector@yorku.ca</a></p>
-            <p>York U Student ID: 219XXXXXX</p>
+            <p>Contact: <a href="mailto:weeevan6@gmail.com" style="color:#fff;">weeevan6@gmail.com</a></p>
+            <p>Location: Richmond Hill, ON</p>
             <p style="margin-top: 0.5rem;">Last Updated: August 2026</p>
         </div>
     </aside>
@@ -297,15 +287,15 @@
             <div class="grid-2" style="margin-top: 1.5rem;">
                 <div class="card">
                     <h4>Program of Study</h4>
-                    <p class="subtitle">Computer Science for Software Development (BASc)</p>
-                    <p><strong>Expected Graduation:</strong> Spring 2028</p>
+                    <p class="subtitle">Computer Science for Software Development (B.A.Sc)</p>
+                    <p><strong>Expected Graduation:</strong> April 2028</p>
                     <p><strong>Institution:</strong> Lassonde School of Engineering, York University</p>
                 </div>
                 <div class="card">
                     <h4>Professional Profiles</h4>
                     <p class="subtitle">External Links</p>
-                    <p><a href="https://www.linkedin.com" target="_blank" class="btn">LinkedIn Profile</a></p>
-                    <p><a href="https://github.com" target="_blank" class="btn" style="background-color: #333;">GitHub Repository</a></p>
+                    <p><a href="https://www.linkedin.com/in/evan-wee" target="_blank" rel="noopener noreferrer" class="btn">LinkedIn Profile</a></p>
+                    <p><a href="https://github.com/evanwee28" target="_blank" rel="noopener noreferrer" class="btn" style="background-color: #333;">GitHub Repository</a></p>
                 </div>
             </div>
         </section>
@@ -316,81 +306,57 @@
             
             <h3>Education</h3>
             <div class="card">
-                <h4>Bachelor of Applied Science (BASc) – Computer Science</h4>
-                <p class="subtitle">Lassonde School of Engineering, York University | 2024 – Present (Exp. 2028)</p>
-                <p>Focusing on software development, data structures, algorithm architecture, low-level execution, and object-oriented design patterns.</p>
+                <h4>Bachelor of Applied Science (B.A.Sc) – Computer Science for Software Development</h4>
+                <p class="subtitle">Lassonde School of Engineering, York University | Expected April 2028</p>
+                <p>Focusing on software development, data structures, algorithm architecture, full-stack web applications, and object-oriented design patterns.</p>
             </div>
 
             <h3>Experience</h3>
             <div class="card">
                 <h4>Data Control Administrator Intern</h4>
                 <p class="subtitle">Lactalis Canada | May 2026 – Present</p>
-                <p>Managing internal database systems, optimizing query logic, and developing internal automation tooling using Python and SQL.</p>
+                <p>Overseeing database accuracy via SAP, maintaining data governance, and developing GUI-based Python tools to streamline data parsing and administrative reporting.</p>
             </div>
             <div class="card">
-                <h4>Technical Coding Instructor</h4>
-                <p class="subtitle">Wiz Robotics | Jan 2026 – Present</p>
-                <p>Instructing core programming concepts in Java, Python, and Lua, fostering algorithmic thinking and structural logic in young learners.</p>
+                <h4>Barista</h4>
+                <p class="subtitle">Matcha Matcha | Sep 2025 – Present</p>
+                <p>Delivering quality service in a fast-paced environment, collaborating with management on social media campaigns, and reinforcing brand engagement.</p>
+            </div>
+            <div class="card">
+                <h4>Curriculum Developer</h4>
+                <p class="subtitle">Wiz Robotics | Oct 2022 – Aug 2023 / Jan 2026 – Mar 2026</p>
+                <p>Built interactive STEM lessons using ReactJS and HTML/CSS, integrated PhET simulations, and optimized codebase workflows using Git.</p>
             </div>
 
-            <h3>Resume</h3>
-            <div class="card" style="text-align: center; padding: 2rem;">
-                <p>Curated and polished resume updated for COOP Work Terms.</p>
-                <a href="#resume" class="btn" onclick="alert('In production, this links directly to your hosted PDF file.')">View PDF Resume</a>
-            </div>
+            <h3>Updated Resume Preview</h3>
+            <p>Below is the preview of my current resume. You can also view or download the file directly.</p>
+            <a href="Evan Wee Resume-2.pdf" target="_blank" class="btn">Open Resume in New Tab (PDF)</a>
+            
+            <!-- Embedded PDF Preview -->
+            <iframe class="pdf-container" src="Evan Wee Resume-2.pdf" type="application/pdf">
+                <p>Your browser does not support embedded PDFs. You can <a href="Evan Wee Resume-2.pdf">click here to download the PDF file.</a></p>
+            </iframe>
         </section>
 
         <!-- C: GOALS AND PORTFOLIOS -->
         <section id="goals">
             <h2>C. Goals & Portfolios</h2>
-            <p>This section structures my professional development around the "Discover Myself" framework and key experiential milestones.</p>
+            <p>This section structures my professional development around the "Discover Myself" framework and core technical skills.</p>
 
             <h3>Portfolio: Discover Myself</h3>
             <div class="grid-2">
                 <div class="card">
                     <h4>Dreams & Goals</h4>
-                    <p>To architect scalable software infrastructure that solves real-world human problems, while leading technical teams with empathy, composure, and dynamic curiosity.</p>
+                    <p>To completion of my degree, build hands-on industry expertise through co-op terms, and transition into a full-time software developer role creating impactful, scalable software solutions.</p>
                 </div>
                 <div class="card">
-                    <h4>Interests & Skills</h4>
-                    <p><strong>Languages:</strong> Java, Python, C, Lua, Y86-64 Assembly<br>
-                    <strong>Tools & Systems:</strong> Docker, Minikube, Neovim, Git, Linux<br>
-                    <strong>Soft Skills:</strong> Calm under pressure, cross-cultural collaboration, structured logic.</p>
+                    <h4>Technical & Soft Skills</h4>
+                    <p><strong>Languages:</strong> JavaScript, Python, HTML, CSS, Java, C<br>
+                    <strong>Frameworks:</strong> ReactJS, NextJS, NodeJS<br>
+                    <strong>Tools & Platforms:</strong> Git, Firebase, SAP<br>
+                    <strong>Strengths:</strong> Composure under pressure, adaptability, structured problem solving.</p>
                 </div>
             </div>
-
-            <h3>Life Timeline & Emotional Impact Assessment</h3>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Key Event</th>
-                        <th>Emotional Rating (-5 to +5)</th>
-                        <th>Key Leadership Insight</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><strong>1. Youth Travel Across Cultures</strong></td>
-                        <td style="color: green; font-weight: bold;">+4</td>
-                        <td>Developed cultural open-mindedness and an inclusive approach to multidisciplinary team collaboration.</td>
-                    </tr>
-                    <tr>
-                        <td><strong>2. Enrolling in Lassonde CS Program</strong></td>
-                        <td style="color: green; font-weight: bold;">+3</td>
-                        <td>Aligned academic execution with core software engineering goals and career direction.</td>
-                    </tr>
-                    <tr>
-                        <td><strong>3. Navigating High-Pressure Technical Deadlines</strong></td>
-                        <td style="color: red; font-weight: bold;">-2</td>
-                        <td>Keeping composure under stress enables calm, methodical execution and reliable team leadership.</td>
-                    </tr>
-                    <tr>
-                        <td><strong>4. Learning from Anthony Bourdain's Philosophy</strong></td>
-                        <td style="color: green; font-weight: bold;">+5</td>
-                        <td>Genuine connection and empathetic listening are essential components of humble, effective leadership.</td>
-                    </tr>
-                </tbody>
-            </table>
         </section>
 
         <!-- E: COURSE PROJECTS & ARTIFACTS -->
@@ -401,22 +367,22 @@
             <div class="grid-2" style="margin-top: 1.5rem;">
                 <!-- Artifact 1 -->
                 <div class="card">
-                    <h4>Modular RPG Game Engine Persistence Layer</h4>
-                    <p class="subtitle">COOP 2100 / Computer Science Project</p>
-                    <p>Engineered dynamic state management utilizing Facade and Memento design patterns in Java for team project architecture.</p>
-                    <span class="tag">Individual and Teamwork</span>
+                    <h4>Java Banking Application System</h4>
+                    <p class="subtitle">Academic Project (Final Grade: A)</p>
+                    <p>Designed a modular banking system utilizing Object-Oriented Programming (inheritance, polymorphism) and secure transaction handling with JUnit testing.</p>
                     <span class="tag">Design</span>
+                    <span class="tag">Use of Engineering Tools</span>
                     <br>
                     <button class="btn" onclick="openModal('modal1')">View Reflection (Retell, Relate, Reflect)</button>
                 </div>
 
                 <!-- Artifact 2 -->
                 <div class="card">
-                    <h4>Automated Financial Data Cleansing Pipeline</h4>
-                    <p class="subtitle">Python Data Processing Automation</p>
-                    <p>Refactored legacy financial macro spreadsheets into automated, reproducible OpenPyXL scripts to resolve negative balances.</p>
-                    <span class="tag">Use of Engineering Tools</span>
+                    <h4>Full-Stack Pomodoro Application (Timer Pomo)</h4>
+                    <p class="subtitle">ReactJS, Firebase, CSS Project</p>
+                    <p>Developed a web application featuring real-time data persistence via Firebase and custom state management logic.</p>
                     <span class="tag">Problem Analysis</span>
+                    <span class="tag">Individual and Teamwork</span>
                     <br>
                     <button class="btn" onclick="openModal('modal2')">View Reflection (Retell, Relate, Reflect)</button>
                 </div>
@@ -434,12 +400,12 @@
     <div id="modal1" class="modal">
         <div class="modal-content">
             <span class="close-btn" onclick="closeModal('modal1')">&times;</span>
-            <h3>Reflection: Modular RPG Game Engine</h3>
-            <p><strong>Tagged Competencies:</strong> Individual and Teamwork, Design</p>
+            <h3>Reflection: Java Banking Application System</h3>
+            <p><strong>Tagged Competencies:</strong> Design, Use of Engineering Tools</p>
             <hr style="margin: 1rem 0;">
-            <p><strong>1. Retell (What happened?):</strong> I collaborated with a peer software engineering team to construct a modular persistence system for a game software project called <em>rpg-legends</em>, partitioning interfaces using standard facade patterns.</p>
-            <p><strong>2. Relate (How does it connect to COOP 2100?):</strong> This project directly reflected team role partitioning, dynamic problem analysis, and structured execution frameworks essential for high-performing engineering teams.</p>
-            <p><strong>3. Reflect (What did you learn?):</strong> I realized that establishing clear interface contracts early reduces friction during integration. It reinforced my ability to maintain composure during integration roadblocks.</p>
+            <p><strong>1. Retell (What happened?):</strong> I designed and implemented a modular banking platform using core OOP architecture, comprehensive JUnit unit testing suites, and data handling workflows.</p>
+            <p><strong>2. Relate (How does it connect to COOP 2100?):</strong> Demonstrates disciplined code design, automated verification, and systematic engineering tool usage required in professional environments.</p>
+            <p><strong>3. Reflect (What did you learn?):</strong> Writing comprehensive test cases early prevents unexpected bug propagation and reinforces a calm, methodical debugging mindset.</p>
         </div>
     </div>
 
@@ -447,12 +413,12 @@
     <div id="modal2" class="modal">
         <div class="modal-content">
             <span class="close-btn" onclick="closeModal('modal2')">&times;</span>
-            <h3>Reflection: Financial Data Cleansing Script</h3>
-            <p><strong>Tagged Competencies:</strong> Use of Engineering Tools, Problem Analysis</p>
+            <h3>Reflection: Timer Pomo Application</h3>
+            <p><strong>Tagged Competencies:</strong> Problem Analysis, Individual and Teamwork</p>
             <hr style="margin: 1rem 0;">
-            <p><strong>1. Retell (What happened?):</strong> I built a standalone Python automation program utilizing the OpenPyXL library to process, clean, and filter legacy financial aging data structures.</p>
-            <p><strong>2. Relate (How does it connect to COOP 2100?):</strong> Demonstrates the practical application of continuous optimization and software tool selection to eliminate redundant manual processes.</p>
-            <p><strong>3. Reflect (What did you learn?):</strong> Scripting reliable automated pipelines taught me to anticipate edge-case formatting errors in advance, sharpening my analytical troubleshooting workflow.</p>
+            <p><strong>1. Retell (What happened?):</strong> I engineered a web application using ReactJS and Firebase real-time database synchronization to manage user productivity timers.</p>
+            <p><strong>2. Relate (How does it connect to COOP 2100?):</strong> Illustrates full-stack development capability and effective asynchronous state handling under real-world usage scenarios.</p>
+            <p><strong>3. Reflect (What did you learn?):</strong> Managing real-time backend state taught me how to decompose complex user interface requirements into clear, manageable dynamic components.</p>
         </div>
     </div>
 
